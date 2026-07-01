@@ -48,12 +48,12 @@ Response (`201 Created`):
 
 ### Resolve a short URL
 
-**GET** `/shrt/<code>/`
+**GET** `api/shrt/<code>/`
 
 Example:
 
 ```http
-GET /shrt/V8LpKUIr/
+GET api/shrt/V8LpKUIr/
 ```
 
 Response (`200 OK`):
@@ -90,13 +90,6 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-Windows:
-
-```powershell
-python -m venv .venv
-.venv\Scripts\activate
-```
-
 Install the project:
 
 ```bash
@@ -118,7 +111,7 @@ python manage.py runserver
 The API will be available at:
 
 ```text
-http://localhost:8000/
+http://localhost:8000/api/
 ```
 
 ---
@@ -129,16 +122,6 @@ http://localhost:8000/
 python manage.py test
 ```
 
-
----
-
-## Running tests
-
-```bash
-python manage.py test
-```
-
----
 
 ## Design
 
